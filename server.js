@@ -4,7 +4,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 require('dotenv').config()
-const port = process.env.PORT || 80
+const port = process.env.PORT || 7070
 const planetSchema = new mongoose.Schema({
     title: String,
     hdurl: String,
@@ -53,14 +53,15 @@ app.delete('/image/:id', function (req, res) {
     })
 })
 
-if(process.env.NODE_ENV === 'production'){
-    app.use(express.static(path.join(__dirname, 'client/build')));
+// if(process.env.NODE_ENV === 'production'){
+//     app.use(express.static(path.join(__dirname, 'client/build')));
 
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-    });
+//     app.get('*', (req, res) => {
+//         res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+//     });
 
-}
+// }
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.listen(port, () => console.log("server up and running on port " + port))
 

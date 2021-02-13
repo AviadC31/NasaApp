@@ -12,7 +12,7 @@ export default function Favourites(props) {
 
     useEffect(() => {
         async function fetchMyAPI() {
-            let planets = await axios.get(`https://nasapp-react-aviadc31.herokuapp.com/images?id=${id}`)
+            let planets = await axios.get(`http://18.193.224.15:7070/images?id=${id}`)
             planets.data.forEach(p => p['favourite'] = true)
             if(planets.data.length ==1)
                  planets.data[0].hideDescription = false

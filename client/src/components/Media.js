@@ -24,10 +24,10 @@ export default function Media(props) {
 
     useEffect(() => {
         if (!isSaved && isFavourite)
-            axios.delete(`https://nasapp-react-aviadc31.herokuapp.com/image/${props.planet._id}`)
+            axios.delete(`http://18.193.224.15:7070/image/${props.planet._id}`)
                 .then(res => console.log('image id: ' + res + ' has unfavourited successfully'))
                 .catch(err => console.log(err))
-        else if (isClicked) axios.post("https://nasapp-react-aviadc31.herokuapp.com/image", props.planet)
+        else if (isClicked) axios.post("http://18.193.224.15:7070/image", props.planet)
     }, [isClicked])
 
     return (
