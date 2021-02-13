@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0cae3c6b.chunk.css",
+    "main.js": "/static/js/main.ba7c0b9d.chunk.js",
+    "main.js.map": "/static/js/main.ba7c0b9d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.83a940af.js",
+    "runtime-main.js.map": "/static/js/runtime-main.83a940af.js.map",
+    "static/js/2.b6c97361.chunk.js": "/static/js/2.b6c97361.chunk.js",
+    "static/js/2.b6c97361.chunk.js.map": "/static/js/2.b6c97361.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e15f328e612e3b5784d03f0763a72455.js": "/precache-manifest.e15f328e612e3b5784d03f0763a72455.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.0cae3c6b.chunk.css.map": "/static/css/main.0cae3c6b.chunk.css.map",
+    "static/js/2.b6c97361.chunk.js.LICENSE.txt": "/static/js/2.b6c97361.chunk.js.LICENSE.txt",
+    "static/media/Favourite.png": "/static/media/Favourite.eb9536a0.png",
+    "static/media/nasa.png": "/static/media/nasa.23d919ae.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83a940af.js",
+    "static/js/2.b6c97361.chunk.js",
+    "static/css/main.0cae3c6b.chunk.css",
+    "static/js/main.ba7c0b9d.chunk.js"
+  ]
+}
